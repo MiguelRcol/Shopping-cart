@@ -608,7 +608,9 @@ main {
 .featured-card__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  mix-blend-mode: multiply;
   filter: saturate(0.82);
   transition: transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -900,7 +902,8 @@ main {
 .product-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   mix-blend-mode: multiply;
   transition: transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -1125,7 +1128,8 @@ main {
 .cart-line__image-wrap img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   mix-blend-mode: multiply;
 }
 
