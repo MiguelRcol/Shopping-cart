@@ -5,9 +5,9 @@ import { afterEach, beforeEach } from "vitest";
 beforeEach(() => {
   window.localStorage.clear();
   window.history.replaceState(null, "", "/");
+  document.documentElement.lang = "";
 });
 
 afterEach(() => {
   cleanup();
 });
-

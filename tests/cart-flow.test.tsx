@@ -1,4 +1,4 @@
-import { render, screen, waitFor, within } from "@testing-library/react";
+import { waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 import {
@@ -11,6 +11,7 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ShopCatalog } from "@/components/products/ShopCatalog";
 import { bag, shoe } from "./fixtures";
+import { render, screen } from "./test-utils";
 
 function CartProbe() {
   const { totalQuantity, lines } = useCart();

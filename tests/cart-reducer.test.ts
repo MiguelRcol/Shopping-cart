@@ -54,4 +54,3 @@ describe("parseStoredCart", () => {
     expect(parseStoredCart(JSON.stringify([{ nope: true }]))).toEqual([]);
   });
 });
-

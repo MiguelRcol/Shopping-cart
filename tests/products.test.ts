@@ -17,7 +17,8 @@ describe("product catalog", () => {
       id: "api-7",
       title: "Runner 7",
       priceCents: 9950,
-      category: "Calzado",
+      category: "shoes",
+      audience: "men",
     });
   });
 
@@ -48,4 +49,3 @@ describe("product catalog", () => {
     await expect(getProducts(fetcher)).resolves.toEqual(fallbackProducts);
   });
 });
-

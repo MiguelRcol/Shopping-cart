@@ -6,12 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(process.cwd()),
-      "next/link": path.resolve(process.cwd(), "tests/mocks/next-link.tsx"),
-      "next/navigation": path.resolve(
-        process.cwd(),
-        "tests/mocks/next-navigation.ts",
-      ),
+      "@": path.resolve(import.meta.dirname, "src"),
     },
   },
   test: {
@@ -22,4 +17,3 @@ export default defineConfig({
     restoreMocks: true,
   },
 });
-
