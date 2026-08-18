@@ -27,11 +27,13 @@ host.
 
 ## Product photography
 
-Every product photo is a real, hand-picked photograph — no AI-generated
-renders — sourced from [Unsplash](https://unsplash.com) and checked
-individually to avoid frames that show a third-party brand name or logo.
-Used under the [Unsplash License](https://unsplash.com/license) (free for
-commercial use, no attribution required).
+Every product photo is a real, static photograph — no AI-generated renders,
+no action shots — sourced from [Unsplash](https://unsplash.com) and used
+under the [Unsplash License](https://unsplash.com/license) (free for
+commercial use, no attribution required). This is an educational demo, not
+a real store, so a few photos show real footwear as it was actually
+photographed; nothing here is presented as an original STRIDE-manufactured
+product.
 
 ## Development
 

@@ -1,25 +1,14 @@
 import type { Product } from "./shop";
 
 /**
- * STRIDE's product catalog. Every image is a real, hand-picked photograph
- * (no AI-generated renders) sourced from Unsplash and checked individually
- * to avoid frames that show a third-party brand name or logo — the goal is
- * a shop that looks and feels real without borrowing anyone else's mark.
- * See README.md for the photography license note.
+ * STRIDE's product catalog. Every image is a real, static product
+ * photograph (no AI-generated renders, no action/motion shots) sourced
+ * from Unsplash. This is an educational demo project rather than a real
+ * store, so a few photos show real footwear as it was actually
+ * photographed — nothing here is presented as an original
+ * STRIDE-manufactured product. See README.md for the photography license.
  */
 export const products: Product[] = [
-  {
-    id: "stride-pulse-runner",
-    title: "Pulse Runner",
-    category: "shoes",
-    collectionLine: "Running",
-    audience: "unisex",
-    priceCents: 12900,
-    image:
-      "https://images.unsplash.com/photo-1765914448100-0845241f7481?auto=format&fit=crop&w=1200&q=85",
-    rating: 4.8,
-    isNew: true,
-  },
   {
     id: "stride-track-racer",
     title: "Track Racer",
@@ -28,19 +17,42 @@ export const products: Product[] = [
     audience: "unisex",
     priceCents: 13500,
     image:
-      "https://images.unsplash.com/photo-1766970096346-937852c7d350?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1637437757614-6491c8e915b5?auto=format&fit=crop&w=1200&q=85",
     rating: 4.8,
     isNew: true,
   },
   {
-    id: "stride-shadow-runner",
-    title: "Shadow Runner",
+    id: "stride-trail-runner",
+    title: "Trail Runner",
     category: "shoes",
     collectionLine: "Running",
     audience: "unisex",
-    priceCents: 11800,
+    priceCents: 12200,
     image:
-      "https://images.unsplash.com/photo-1758506971683-c080e6f16ce9?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1696191345363-5653919d8a8e?auto=format&fit=crop&w=1200&q=85",
+    rating: 4.7,
+  },
+  {
+    id: "stride-night-profile",
+    title: "Night Profile",
+    category: "shoes",
+    collectionLine: "Running",
+    audience: "unisex",
+    priceCents: 14500,
+    image:
+      "https://images.unsplash.com/photo-1755194757953-a9301005114b?auto=format&fit=crop&w=1200&q=85",
+    rating: 4.8,
+    isNew: true,
+  },
+  {
+    id: "stride-trailblazer",
+    title: "Trailblazer",
+    category: "shoes",
+    collectionLine: "Outdoor",
+    audience: "unisex",
+    priceCents: 13900,
+    image:
+      "https://images.unsplash.com/photo-1648475025487-603cb51af867?auto=format&fit=crop&w=1200&q=85",
     rating: 4.7,
   },
   {
@@ -55,26 +67,15 @@ export const products: Product[] = [
     rating: 4.8,
   },
   {
-    id: "stride-trail-runner",
-    title: "Trail Runner",
+    id: "stride-suede-trainer",
+    title: "Suede Trainer",
     category: "shoes",
     collectionLine: "Training",
     audience: "unisex",
-    priceCents: 12200,
+    priceCents: 11500,
     image:
-      "https://images.unsplash.com/photo-1762709753316-591427724237?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1680254418556-3980c19d4304?auto=format&fit=crop&w=1200&q=85",
     rating: 4.6,
-  },
-  {
-    id: "stride-trailblazer",
-    title: "Trailblazer",
-    category: "shoes",
-    collectionLine: "Outdoor",
-    audience: "unisex",
-    priceCents: 13900,
-    image:
-      "https://images.unsplash.com/photo-1648475025487-603cb51af867?auto=format&fit=crop&w=1200&q=85",
-    rating: 4.7,
   },
   {
     id: "stride-wanderer-suede",
@@ -86,7 +87,6 @@ export const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1540691737051-481176b5c92d?auto=format&fit=crop&w=1200&q=85",
     rating: 4.5,
-    isNew: true,
   },
   {
     id: "stride-ridgeline",
