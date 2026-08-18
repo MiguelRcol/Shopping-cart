@@ -1,3 +1,23 @@
+/* Self-hosted variable fonts (same font files next/font/google serves for
+   Geist), so every intermediate weight in this file (650, 750, 760…)
+   renders at its exact weight instead of snapping to the nearest static
+   cut. */
+@font-face {
+  font-family: "Geist Sans";
+  src: url("/fonts/geist-sans-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/geist-mono-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --ink: #0b0b0b;
   --paper: #f4f2ec;

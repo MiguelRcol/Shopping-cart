@@ -1,42 +1,48 @@
 # STRIDE — Shopping Cart
 
-Una tienda deportiva de demostración creada para el proyecto **Shopping Cart**
-de The Odin Project. La interfaz toma referencias generales del comercio
-deportivo editorial —tipografía expresiva, fotografía de movimiento y alto
-contraste— con una marca y un sistema visual originales.
+A demo sports store built for the **Shopping Cart** project on The Odin
+Project. The interface takes general cues from editorial sportswear
+commerce — expressive type, movement photography, high contrast — with an
+original brand and visual system.
 
-## Funcionalidades
+## Features
 
-- Tres rutas: inicio (`/`), tienda (`/shop`) y carrito (`/cart`).
-- Selector de idioma **Español / English** en el encabezado, con español
-  como idioma por defecto y persistencia entre visitas.
-- Navegación compartida con contador de unidades en tiempo real.
-- Catálogo deportivo obtenido desde DummyJSON y catálogo local de respaldo.
-- Filtros por categoría y orden por precio.
-- Cantidad manual, incremento y decremento en cada producto.
-- Carrito con acumulación de productos repetidos, edición, eliminación y vaciado.
-- Subtotal, envío y total calculados al instante.
-- Persistencia segura en `localStorage` y sincronización entre pestañas.
-- Diseño responsive y navegación accesible con teclado.
-- Checkout marcado explícitamente como demostración, sin pagos reales.
+- Three routes: home (`/`), shop (`/shop`) and cart (`/cart`).
+- **Spanish / English** language switch in the header, Spanish by default,
+  persisted between visits.
+- Shared navigation with a real-time unit counter.
+- Product catalog with manual quantity, increment and decrement.
+- Cart with merging of repeated items, editing, removal and clearing.
+- Instant subtotal, shipping and total calculation.
+- Safe `localStorage` persistence, synced across tabs.
+- Responsive design and keyboard-accessible navigation.
+- Checkout explicitly marked as a demo, no real payments.
 
 ## Stack
 
-React 19, TypeScript, Vite 8 y React Router. Sin backend ni base de datos:
-el catálogo remoto se consulta directamente desde el navegador, con
-respaldo local si la API no responde. Compila a un sitio estático (`dist/`)
-desplegable en cualquier hosting.
+React 19, TypeScript, Vite 8 and React Router. No backend or database: the
+catalog is bundled with the app and renders instantly, no network
+round-trip required. Builds to a static site (`dist/`) deployable to any
+host.
 
-## Desarrollo
+## Product photography
 
-Requiere Node.js 20.19+ o 22.12+.
+Every product photo is a real, hand-picked photograph — no AI-generated
+renders — sourced from [Unsplash](https://unsplash.com) and checked
+individually to avoid frames that show a third-party brand name or logo.
+Used under the [Unsplash License](https://unsplash.com/license) (free for
+commercial use, no attribution required).
+
+## Development
+
+Requires Node.js 20.19+ or 22.12+.
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Validación
+## Validation
 
 ```bash
 npm test
@@ -44,20 +50,21 @@ npm run lint
 npm run build
 ```
 
-Las pruebas usan React Testing Library, Vitest y `user-event`: 15 casos que
-cubren el reducer del carrito, persistencia, catálogo remoto y fallback,
-navegación, cantidades, contador, filtros, totales, eliminación y el
-selector de idioma.
+Tests use React Testing Library, Vitest and `user-event`: 15 cases covering
+the cart reducer, persistence, the product catalog, navigation, quantities,
+the cart counter, filters, totals, item removal and the language switch.
 
-## Despliegue
+## Deployment
 
-El proyecto compila a estático con `npm run build` (salida en `dist/`) y no
-depende de ningún proveedor en particular.
+The app builds to static files with `npm run build` (output in `dist/`)
+and isn't tied to any particular host.
 
-- **Netlify / Vercel:** import directo del repositorio de GitHub; ambos
-  detectan Vite automáticamente y usan `netlify.toml` / `vercel.json`
-  (ya incluidos) sin configuración adicional.
-- **GitHub Pages / Cloudflare Pages / cualquier hosting estático:** subir el
-  contenido de `dist/` tras ejecutar `npm run build`. Para un GitHub Pages
-  de tipo proyecto (`usuario.github.io/repo`), compilar con
+- **Netlify / Vercel:** import the GitHub repo directly; both auto-detect
+  Vite and use the included `netlify.toml` / `vercel.json` — zero extra
+  config.
+- **GitHub Pages / Cloudflare Pages / any static host:** upload the
+  contents of `dist/` after running `npm run build`. For a GitHub Pages
+  project site (`user.github.io/repo`), build with
   `VITE_BASE_PATH=/repo/ npm run build`.
+
+Live: <https://stride-shopping.netlify.app/>

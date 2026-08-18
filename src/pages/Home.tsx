@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { useI18n } from "@/i18n/I18nContext";
-import { fallbackProducts } from "@/lib/fallback-products";
+import { products } from "@/lib/products";
 import { formatCurrency } from "@/lib/shop";
 
-const featuredProducts = fallbackProducts.slice(0, 4);
+const featuredProducts = products.slice(0, 4);
 
 export function Home() {
   const { dict, locale } = useI18n();
